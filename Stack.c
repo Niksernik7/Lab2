@@ -28,6 +28,7 @@ char Pop(Stack *s)
 void FreeStack(Stack *s)
 {
     list_delete(s->data);
+    free(s);
 }
 #endif
 #ifdef SVector
@@ -55,5 +56,6 @@ char Pop(Stack *s)
 }
 void FreeStack(Stack *s) {
     freeVector(s->data);
+    free(s);
 }
 #endif
