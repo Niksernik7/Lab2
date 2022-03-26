@@ -15,6 +15,8 @@ List *list_new();
 
 void list_delete(List *list);
 
+int CheckEmptyList(List *list);
+
 int list_push(List *list, int data);
 
 int list_pop(List *list, int *output);
