@@ -9,7 +9,7 @@ Stack *newStackL() {
 }
 int CheckEmpty(Stack *s)
 {
-    return !((List *)s->data)->Size;
+    return CheckEmptyList(s->data);
 }
 void Push(Stack *s, char elem)
 {
