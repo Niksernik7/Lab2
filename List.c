@@ -1,5 +1,10 @@
 #include "List.h"
 
+int CheckEmptyList(List *list)
+{
+    return !list->Size;
+}
+
 List *list_new() {
     return (List *) calloc(1, sizeof(List));
 }
